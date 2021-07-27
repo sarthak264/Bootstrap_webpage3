@@ -9,9 +9,6 @@
     gap: 5px;
     height: 100%;
 }
-.app-store-img{
-    height: 50px;
-}
 #quote,#get-app{
     background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
     padding: 5rem 0;
@@ -23,6 +20,9 @@
     padding: 0 3rem;
     margin: 0 auto;
 }
+.quote-img{
+    height: 3rem;
+}
 @media screen and (max-width:1200px){
     #quote h2{
         width: 100%;
@@ -33,8 +33,19 @@
         padding: 0 1rem;
     }
 }
-.quote-img{
-    height: 3rem;
+#call-to-action{
+    min-height: 90vh;
+    background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+}
+#call-to-action h1{
+    font-family:'Borgia Pro';
+    font-weight: 700;
+    line-height: 1;
+}
+.app-store-img{
+    height: 50px;
 }
 #footer{
     background: black;
