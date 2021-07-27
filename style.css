@@ -16,3 +16,6 @@
     background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
     padding: 5rem 0;
 }
+.footer{
+    background: black;
+}
