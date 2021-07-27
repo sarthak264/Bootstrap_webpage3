@@ -12,10 +12,30 @@
 .app-store-img{
     height: 50px;
 }
-#get-app{
+#quote,#get-app{
     background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
     padding: 5rem 0;
 }
-.footer{
+#quote h2{
+    font-family:'Borgia Pro';
+    font-weight: 700;
+    width: 65%;
+    padding: 0 3rem;
+    margin: 0 auto;
+}
+@media screen and (max-width:1200px){
+    #quote h2{
+        width: 100%;
+    }
+}
+@media screen and (max-width:768px){
+    #quote h2{
+        padding: 0 1rem;
+    }
+}
+.quote-img{
+    height: 3rem;
+}
+#footer{
     background: black;
 }
