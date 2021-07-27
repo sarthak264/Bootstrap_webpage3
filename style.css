@@ -1,21 +1,25 @@
-.navbar{
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800&display=swap');
+/* .navbar{
     box-shadow: 0 0 0.25rem rgba(0,0,0,0.7);
+} */
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Newsreader', serif;
 }
 .navbar-brand{
     font-size: 1.25rem;
 }
-.message-btn{
+.nav-btn{
     background-color: #2937f0;
     gap: 5px;
     height: 100%;
+    width: auto;
 }
 #quote,#get-app{
     background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
     padding: 5rem 0;
 }
 #quote h2{
-    font-family:'Borgia Pro';
-    font-weight: 700;
+    font-weight: 600;
     width: 65%;
     padding: 0 3rem;
     margin: 0 auto;
@@ -33,6 +37,32 @@
         padding: 0 1rem;
     }
 }
+#info{
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+#info h2{
+    font-weight: 600;
+}
+#info p{
+    font-weight: 500;
+}
+#info img{
+    width: 100%;
+}
+.img-container{
+    text-align: center;
+}
+@media (max-width: 768px){
+    #info img{
+        max-width: 288px;
+    }
+}
+@media screen and (max-width:1200px){
+    #info img{
+        max-width: 408px;
+    }
+}
 #call-to-action{
     min-height: 90vh;
     background: linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('assets/unsplash.jpg');
@@ -40,9 +70,12 @@
     background-position: center;
 }
 #call-to-action h1{
-    font-family:'Borgia Pro';
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1;
+}
+#get-app h2{
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 600;
 }
 .app-store-img{
     height: 50px;
