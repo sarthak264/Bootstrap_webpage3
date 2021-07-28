@@ -1,18 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&display=swap');
 /* .navbar{
     box-shadow: 0 0 0.25rem rgba(0,0,0,0.7);
 } */
 h1,h2,h3,h4,h5,h6{
     font-family: 'Newsreader', serif;
 }
+.navbar-brand:hover{
+    color: #2937f0 !important;
+}
 .navbar-brand{
     font-size: 1.25rem;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav-link{
+    color: #000 !important; 
+    font-family: 'Mulish', sans-serif !important;   
+}
+.nav-link:hover{
+    color: #acafb3 !important;
 }
 .nav-btn{
     background-color: #2937f0;
     gap: 5px;
     height: 100%;
     width: auto;
+}
+@media screen and (max-width:992px){
+    .nav-btn{
+        width: 180px;
+    }
+}
+#header{
+    padding: 9.5rem 0 5rem 0;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+#header h1{
+    font-weight:600;
+}
+#header p{
+    font-weight: 500;
+    font-family: 'Mulish', sans-serif;
+}
+#header .app-store{
+    height: 48px;
+}
+#header video{
+    width: 220px;
+    max-height: 70vh;
+}
+@media screen and (min-width:768px){
+    #header video{
+        width: 240px;
+    }
+}
+@media screen and (min-width:1200px){
+    #header video{
+        width: 340px;
+    }
 }
 #quote,#get-app{
     background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
@@ -36,6 +85,21 @@ h1,h2,h3,h4,h5,h6{
     #quote h2{
         padding: 0 1rem;
     }
+}
+#features{
+    padding:5rem 0;
+}
+#features h3{
+    font-family: 'Kanit', sans-serif;
+}
+.bi::before{
+    font-size: 64px;
+    background: linear-gradient(90deg, hsla(236, 87%, 55%, 1) 0%, hsla(280, 79%, 49%, 1) 100%);
+    -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+       -webkit-text-fill-color:transparent;
+    padding: 1rem;
 }
 #info{
     padding: 5rem 0;

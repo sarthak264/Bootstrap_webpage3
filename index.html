@@ -10,14 +10,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3">
         <div class="container px-5">
-            <a class="navbar-brand fw-bolder">
+            <a class="navbar-brand">
                 Start Bootstrap
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-main">
@@ -25,84 +26,306 @@
             </button>
             <div class="collapse navbar-collapse" id="navbar-main">
                 <ul class="navbar-nav ms-auto d-lg-flex align-items-lg-center">
-                    <li class="nav-item">
+                    <li class="nav-item mt-3 mt-lg-0 me-lg-3">
                         <a href="#" class="nav-link">Features</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mb-3 mb-lg-0 me-lg-3">
                         <a href="#" class="nav-link">Download</a>
                     </li>
+                    <button class="btn rounded-pill text-white pb-2 pt-1 px-3 nav-btn ms-lg-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="#fff"
+                            class="bi bi-chat-text-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+                        </svg>
+                        Send Feedback
+                    </button>
                 </ul>
-                        <button class="btn rounded-pill text-white pb-2 pt-1 px-3 nav-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
-                                    class="bi bi-chat-text-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
-                                </svg>
-                                Send Feedback
-                        </button>
             </div>
         </div>
     </nav>
 
-    <!-- Quote Section -->
-    <section id="quote" class="text-center text-white">
-        <h2 class="mb-4 fs-1">"An intuitive solution to a common problem that we all face, wrapped up in a single app!"
-        </h2>
-        <img src="assets/tnw-logo.svg" class="quote-img">
-    </section>
-
-    <!-- info section -->
-    <section id="info">
-        <div class="container px-5">
-            <div class="row">
-                <div class="col-12 col-lg-6 d-lg-flex flex-column justify-content-lg-center">
-                    <h2 class="display-4 mb-4">Enter a new age of web design</h2>
-                    <p class="lead text-muted mb-5">
-                        This section is perfect for featuring some information about your application, why it was built, the
-                        problem it solves, or anything else! There's plenty of space for text here, so don't worry about
-                        writing too much.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 d-lg-flex align-items-lg-center img-container">
-                    <img src="assets/purple bg.jpg" class="rounded-circle">
+    <div id="butter">
+        <!-- Header -->
+        <header id="header" class="">
+            <div class="container px-5">
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-6 mb-5 d-lg-flex flex-column justify-content-lg-center justify-content-lg-start text-center text-lg-start px-4">
+                        <h1 class="display-1 lh-1 mb-3">Showcase your app beautifully.</h1>
+                        <p class="lead text-muted mb-5">Launch your mobile app landing page faster with this free, open
+                            source theme from Start Bootstrap!</p>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <img src="assets/google-play-badge.svg" class="app-store mb-4">
+                            </div>
+                            <div class="col-12 col-lg-4">
+                                <img src="assets/app-store-badge.svg" class="app-store">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 d-flex justify-content-center">
+                        <!-- <svg class="circle" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="circleGradient" gradientTransform="rotate(45)">
+                                <stop class="gradient-start-color" offset="0%"></stop>
+                                <stop class="gradient-end-color" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg><svg class="shape-1 d-none d-sm-block" viewBox="0 0 240.83 240.83"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03"
+                            transform="translate(120.42 -49.88) rotate(45)"></rect>
+                        <rect x="-32.54" y="78.39" width="305.92" height="84.05" rx="42.03"
+                            transform="translate(-49.88 120.42) rotate(-45)"></rect>
+                    </svg><svg class="shape-2 d-none d-sm-block" viewBox="0 0 100 100"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50"></circle>
+                    </svg> -->
+                        <div class="device" data-device="iPhoneX" data-orientation="portrait" data-color="black">
+                            <div class="screen bg-black">
+                                <video muted="muted" autoplay="" loop="" style="max-width: 100%; height: 100%">
+                                    <source src="assets/demo-screen.mp4" type="video/mp4" />
+                                </video>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- Call-to-action Section -->
-    <section id="call-to-action" class="text-white py-5 d-flex justify-content-center align-items-center ps-sm-2">
-        <div class="container ps-5">
-            <h1 class="display-1 mb-4">Stop Waiting.<br>Start Building.</h1>
-            <button class="btn btn-outline-light rounded-pill py-3 px-4">Download for free</button>
-        </div>
-    </section>
+        <!-- Quote Section -->
+        <section id="quote" class="text-center text-white">
+            <h2 class="mb-4 fs-1">"An intuitive solution to a common problem that we all face, wrapped up in a single
+                app!"
+            </h2>
+            <img src="assets/tnw-logo.svg" class="quote-img">
+        </section>
 
-    <!-- Get App Section -->
-    <section id="get-app" class="text-center">
-        <h2 class="text-white mb-4">Get the app now!</h2>
-        <div class="img-row d-flex justify-content-center flex-md-row flex-column">
-            <a href="#" class="mb-4 mb-md-0 me-md-2">
-                <img src="assets/google-play-badge.svg" class="app-store-img">
-            </a>
-            <a href="#" class="ms-md-2">
-                <img src="assets/app-store-badge.svg" class="app-store-img">
-            </a>
-        </div>
-    </section>
+        <!-- Features Section -->
+        <section id="features">
+            <div class="container px-5">
+                <!-- Row-1 -->
+                <div class="row row-1">
+                    <div class="col-12 col-md-6">
+                        <div class="feature mb-5 text-center">
+                            <i class="bi bi-phone mb-3"></i>
+                            <h3 class="font-alt">Device Mockups</h3>
+                            <p class="text-muted mb-0">
+                                Ready to use HTML/CSS device mockups, no Photoshop required!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="feature mb-5 text-center">
+                            <i class="bi bi-camera mb-3"></i>
+                            <h3 class="font-alt">Flexible Use</h3>
+                            <p class="text-muted mb-0">
+                                Put an image, video, animation, or anything else in the screen!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row-2 -->
+                <div class="row row-2">
+                    <div class="col-12 col-md-6">
+                        <div class="feature mb-5 text-center">
+                            <i class="bi bi-gift mb-3"></i>
+                            <h3 class="font-alt">Free to Use</h3>
+                            <p class="text-muted mb-0">
+                                As always, this theme is free to download and use for any purpose!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="feature mb-5 text-center">
+                            <i class="bi bi-patch-check mb-3"></i>
+                            <h3 class="font-alt">Open Source</h3>
+                            <p class="text-muted mb-0">
+                                Since this theme is MIT licensed, you can use it commercially!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Footer -->
-    <footer id="footer" class="py-5 text-white-50 text-center">
-        <p class="mb-1">© <a href="https://startbootstrap.com/">Mobirise</a> 2021. All Rights Reserved.</p>
-        <p class="mb-0">
-            Privacy <span class="mx-1">&middot;</span> Terms <span class="mx-1">&middot;</span> FAQ
-        </p>
-    </footer>
+        <!-- info section -->
+        <section id="info">
+            <div class="container px-5">
+                <div class="row">
+                    <div class="col-12 col-lg-6 d-lg-flex flex-column justify-content-lg-center">
+                        <h2 class="display-4 mb-4">Enter a new age of web design</h2>
+                        <p class="lead text-muted mb-5">
+                            This section is perfect for featuring some information about your application, why it was
+                            built,
+                            the
+                            problem it solves, or anything else! There's plenty of space for text here, so don't worry
+                            about
+                            writing too much.
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 d-lg-flex align-items-lg-center img-container">
+                        <img src="assets/purple bg.jpg" class="rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call-to-action Section -->
+        <section id="call-to-action" class="text-white py-5 d-flex justify-content-center align-items-center ps-sm-2">
+            <div class="container ps-5">
+                <h1 class="display-1 mb-4">Stop waiting.<br>Start building.</h1>
+                <button class="btn btn-outline-light rounded-pill py-3 px-4">Download for free</button>
+            </div>
+        </section>
+
+        <!-- Get App Section -->
+        <section id="get-app" class="text-center">
+            <h2 class="text-white mb-4">Get the app now!</h2>
+            <div class="img-row d-flex justify-content-center flex-md-row flex-column">
+                <a href="#" class="mb-4 mb-md-0 me-md-2">
+                    <img src="assets/google-play-badge.svg" class="app-store-img">
+                </a>
+                <a href="#" class="ms-md-2">
+                    <img src="assets/app-store-badge.svg" class="app-store-img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="footer" class="py-5 text-white-50 text-center">
+            <p class="mb-1">© <a href="https://startbootstrap.com/">Mobirise</a> 2021. All Rights Reserved.</p>
+            <p class="mb-0">
+                Privacy <span class="mx-1">&middot;</span> Terms <span class="mx-1">&middot;</span> FAQ
+            </p>
+        </footer>
+    </div>
 
     <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+    <script>
+        (function (root) {
+            var Butter = function () {
+
+                var self = this;
+
+                this.defaults = {
+                    wrapperId: 'butter',
+                    wrapperDamper: 0.07,
+                    cancelOnTouch: false
+                }
+
+                this.validateOptions = function (ops) {
+                    for (var prop in ops) {
+                        if (self.defaults.hasOwnProperty(prop)) {
+                            Object.defineProperty(self.defaults, prop, { value: Object.getOwnPropertyDescriptor(ops, prop).value })
+                        }
+                    }
+                }
+
+                this.wrapperDamper;
+                this.wrapperId;
+                this.cancelOnTouch;
+                this.wrapper;
+                this.wrapperOffset = 0;
+                this.animateId;
+                this.resizing = false;
+                this.active = false;
+                this.wrapperHeight;
+                this.bodyHeight;
+            };
+
+            Butter.prototype = {
+
+                init: function (options) {
+                    if (options) {
+                        this.validateOptions(options);
+                    }
+
+                    this.active = true;
+                    this.resizing = false;
+                    this.wrapperDamper = this.defaults.wrapperDamper;
+                    this.wrapperId = this.defaults.wrapperId;
+                    this.cancelOnTouch = this.defaults.cancelOnTouch;
+
+                    this.wrapper = document.getElementById(this.wrapperId);
+                    this.wrapper.style.position = 'fixed';
+                    this.wrapper.style.width = '100%';
+
+                    this.wrapperHeight = this.wrapper.clientHeight;
+                    document.body.style.height = this.wrapperHeight + 'px';
+
+                    window.addEventListener('resize', this.resize.bind(this));
+                    if (this.cancelOnTouch) {
+                        window.addEventListener('touchstart', this.cancel.bind(this));
+                    }
+                    this.wrapperOffset = 0.0;
+                    this.animateId = window.requestAnimationFrame(this.animate.bind(this));
+
+                    // window.addEventListener('load', this.resize.bind(this));
+                },
+
+                wrapperUpdate: function () {
+                    var scrollY = (document.scrollingElement != undefined) ? document.scrollingElement.scrollTop : (document.documentElement.scrollTop || 0.0);
+                    this.wrapperOffset += (scrollY - this.wrapperOffset) * this.wrapperDamper;
+                    this.wrapper.style.transform = 'translate3d(0,' + (-this.wrapperOffset.toFixed(2)) + 'px, 0)';
+                },
+
+                checkResize: function () {
+                    if (this.wrapperHeight != this.wrapper.clientHeight) {
+                        this.resize();
+                    }
+                },
+
+                resize: function () {
+                    var self = this;
+                    if (!self.resizing) {
+                        self.resizing = true;
+                        window.cancelAnimationFrame(self.animateId);
+                        window.setTimeout(function () {
+                            self.wrapperHeight = self.wrapper.clientHeight;
+                            if (parseInt(document.body.style.height) != parseInt(self.wrapperHeight)) {
+                                document.body.style.height = self.wrapperHeight + 'px';
+                            }
+                            self.animateId = window.requestAnimationFrame(self.animate.bind(self));
+                            self.resizing = false;
+                        }, 150)
+                    }
+                },
+
+                animate: function () {
+                    this.checkResize();
+                    this.wrapperUpdate();
+                    this.animateId = window.requestAnimationFrame(this.animate.bind(this));
+                },
+
+                cancel: function () {
+                    if (this.active) {
+                        window.cancelAnimationFrame(this.animateId);
+
+                        window.removeEventListener('resize', this.resize);
+                        window.removeEventListener('touchstart', this.cancel);
+                        this.wrapper.removeAttribute('style');
+                        document.body.removeAttribute('style');
+
+                        this.active = false;
+                        this.wrapper = "";
+                        this.wrapperOffset = 0;
+                        this.resizing = true;
+                        this.animateId = "";
+                    }
+                },
+            };
+
+            root.butter = new Butter();
+
+        })(this);
+        butter.init();
+    </script>
 </body>
 
 </html>
